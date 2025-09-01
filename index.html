@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения, Мама!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-container">
+    <!-- Экран игры -->
+    <div id="game-container">
+        <h1>Игра "Звёздный дождь"</h1>
+        <p>Мама, поймай все буквы, чтобы собрать поздравление!</p>
+        <canvas id="game-canvas"></canvas>
+        <div id="phrase-display"></div>
+    </div>
+
+    <!-- Экран Колеса Фортуны (изначально скрыт) -->
+    <div id="wheel-container" class="hidden">
+        <h1>Колесо тёплых слов</h1>
+        <p>Ты победила! А теперь крути колесо и получай пожелания!</p>
+        <!-- Контейнер для колеса и стрелки -->
+        <div class="wheel-wrapper">
+            <div class="pointer"></div>
+            <div id="wheel"></div>
+        </div>
+        <button id="spin-button">Крутить!</button>
+        <p id="wish-display">...</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
